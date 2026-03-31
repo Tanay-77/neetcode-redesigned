@@ -1,6 +1,8 @@
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { Testimonials } from "@/components/Testimonials";
+import { Courses } from "@/components/Courses";
+import { CTA } from "@/components/CTA";
 
 export default function Home() {
   return (
@@ -34,6 +36,8 @@ export default function Home() {
       </div>
 
       <Testimonials />
+      <Courses />
+      <CTA />
 
     </div>
   );
