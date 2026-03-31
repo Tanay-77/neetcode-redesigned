@@ -5,7 +5,7 @@ const COURSES = [
   {
     title: "Algorithms & Data Structures",
     description: "Master the fundamentals of computer science and ace your coding interviews with our interactive curriculum.",
-    duration: "45 hours",
+    duration: "25 hours",
     difficulty: "Medium",
     image: "https://imagedelivery.net/CLfkmk9Wzy8_9HRyug4EVA/a65736b6-151f-4572-8e10-87b2b75ab100/public",
     href: "#"
@@ -15,7 +15,7 @@ const COURSES = [
     description: "Learn how to design scalable and distributed systems. Essential mapping for mid-level and senior technical interviews.",
     duration: "25 hours",
     difficulty: "Hard",
-    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=800",
+    image: "https://imagedelivery.net/CLfkmk9Wzy8_9HRyug4EVA/0c64daac-e358-48b1-91f5-7d4953b40600/public",
     href: "#"
   },
   {
@@ -23,15 +23,15 @@ const COURSES = [
     description: "Learn real-world patterns for building robust, maintainable software architectures using OOP principles.",
     duration: "15 hours",
     difficulty: "Medium",
-    image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&q=80&w=800",
+    image: "https://imagedelivery.net/CLfkmk9Wzy8_9HRyug4EVA/f96cc9c7-0515-4283-883c-14d346094400/public",
     href: "#"
   },
   {
     title: "Full Stack Development",
     description: "From React basics to advanced scalable APIs. Build end-to-end, modern production-ready web applications.",
-    duration: "60 hours",
+    duration: "20 hours",
     difficulty: "Easy",
-    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800",
+    image: "https://imagedelivery.net/CLfkmk9Wzy8_9HRyug4EVA/8efc4993-9666-4ceb-c1cb-f1686cbcc300/public",
     href: "#"
   }
 ];
@@ -69,7 +69,7 @@ export function Courses() {
             className="group flex flex-col bg-white border border-[#EAEAEA] rounded-[24px] p-2 hover:-translate-y-1.5 hover:shadow-[0_12px_40px_-8px_rgba(0,0,0,0.08)] hover:border-zinc-300 transition-all duration-300 overflow-hidden"
           >
             {/* Top Visual Area */}
-            <div className="w-full h-[180px] md:h-[220px] rounded-[18px] flex items-center justify-center relative overflow-hidden bg-zinc-100 border border-zinc-200/50">
+            <div className="w-full aspect-video rounded-[18px] flex items-center justify-center relative overflow-hidden bg-zinc-100 border border-zinc-200/50">
               <img src={course.image} alt={course.title} className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-700 ease-out" />
             </div>
 
@@ -90,8 +90,8 @@ export function Courses() {
                   {course.duration}
                 </div>
                 <div className={`inline-flex items-center text-xs font-semibold px-3 py-1.5 rounded-full ${course.difficulty === 'Easy' ? 'bg-emerald-50 text-emerald-700' :
-                    course.difficulty === 'Medium' ? 'bg-amber-50 text-amber-700' :
-                      'bg-red-50 text-red-700'
+                  course.difficulty === 'Medium' ? 'bg-amber-50 text-amber-700' :
+                    'bg-red-50 text-red-700'
                   }`}>
                   {course.difficulty}
                 </div>

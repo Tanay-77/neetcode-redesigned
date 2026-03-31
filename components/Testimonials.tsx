@@ -64,18 +64,18 @@ export const TESTIMONIALS = [
 ];
 
 export const COMPANIES = [
-  { name: "Google", slug: "google" },
-  { name: "Meta", slug: "meta" },
-  { name: "Amazon", slug: "amazon" },
-  { name: "Netflix", slug: "netflix" },
-  { name: "Microsoft", slug: "microsoft" },
-  { name: "OpenAI", slug: "openai" },
+  { name: "Google", url: "https://simpleicons.org/icons/google.svg" },
+  { name: "Meta", url: "https://simpleicons.org/icons/meta.svg" },
+  { name: "Amazon", url: "https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg" },
+  { name: "Netflix", url: "https://simpleicons.org/icons/netflix.svg" },
+  { name: "Microsoft", url: "https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" },
+  { name: "OpenAI", url: "https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg" },
 ];
 
 export function Testimonials() {
   return (
     <section className="relative z-10 w-full max-w-[1300px] mx-auto px-6 py-20 md:py-32">
-      
+
       {/* Trust Heading */}
       <div className="text-center mb-10">
         <h2 className="text-zinc-500 font-medium text-lg md:text-xl tracking-tight">
@@ -87,7 +87,7 @@ export function Testimonials() {
       <div className="flex flex-wrap justify-center items-center gap-4 md:gap-6 mb-20">
         {COMPANIES.map((company) => (
           <div key={company.name} className="px-6 py-3 bg-[#F1F3F5] rounded-2xl flex items-center justify-center gap-2.5 transition-transform hover:-translate-y-0.5">
-            <img src={`https://cdn.simpleicons.org/${company.slug}/71717A`} alt={`${company.name} logo`} className="w-5 h-5 opacity-80" />
+            <img src={company.url} alt={`${company.name} logo`} className="w-5 h-5 opacity-60 grayscale" />
             <span className="text-zinc-600 font-bold text-lg md:text-xl tracking-tight opacity-80">{company.name}</span>
           </div>
         ))}
@@ -97,10 +97,10 @@ export function Testimonials() {
       <div className="columns-1 md:columns-2 lg:columns-3 gap-6 md:gap-8 space-y-6 md:space-y-8">
         {TESTIMONIALS.map((testimonial, i) => (
           <div key={i} className="break-inside-avoid bg-white p-6 md:p-8 rounded-[16px] shadow-[0_4px_24px_-8px_rgba(0,0,0,0.06)] border border-[#EAEAEA] hover:-translate-y-1.5 hover:shadow-[0_12px_40px_-8px_rgba(0,0,0,0.1)] transition-all duration-300 relative group">
-            
+
             {/* Subtle Quote Icon */}
             <Quote className="absolute top-6 right-6 w-8 h-8 text-zinc-100 group-hover:text-zinc-200 transition-colors" />
-            
+
             {/* Card Header */}
             <div className="flex items-center gap-4 mb-5 relative z-10">
               <div className="w-12 h-12 rounded-full overflow-hidden bg-zinc-100 border border-zinc-200 shadow-sm shrink-0">

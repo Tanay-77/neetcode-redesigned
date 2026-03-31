@@ -2,7 +2,9 @@ import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { Testimonials } from "@/components/Testimonials";
 import { Courses } from "@/components/Courses";
+import { About } from "@/components/About";
 import { CTA } from "@/components/CTA";
+import { Footer } from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -36,8 +38,16 @@ export default function Home() {
       </div>
 
       <Testimonials />
+      <div className="w-full h-px bg-[#EAEAEA]" />
+      
       <Courses />
+      <div className="w-full h-px bg-[#EAEAEA]" />
+      
       <CTA />
+      <div className="w-full h-px bg-[#EAEAEA]" />
+
+      <About />
+      <Footer />
 
     </div>
   );
